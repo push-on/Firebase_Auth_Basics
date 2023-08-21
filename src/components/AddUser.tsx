@@ -3,6 +3,7 @@ import { addDoc, collection } from "firebase/firestore"
 import { db, auth } from "../config/firebase"
 import { toast } from "react-hot-toast"
 import { useAuthState } from 'react-firebase-hooks/auth'
+
 export default function AddUser({ updateData }: any) {
 	const [UserName, setUserName] = useState("")
 	const [UserAge, setUserAge] = useState<number>(0)
